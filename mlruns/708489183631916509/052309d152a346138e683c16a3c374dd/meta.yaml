@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/flower-classifier/mlruns/708489183631916509/052309d152a346138e683c16a3c374dd/artifacts
+end_time: 1772487763106
+entry_point_name: ''
+experiment_id: '708489183631916509'
+lifecycle_stage: active
+run_id: 052309d152a346138e683c16a3c374dd
+run_name: MobileNetV2_Final
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772487762963
+status: 3
+tags: []
+user_id: SIDDHARTHA

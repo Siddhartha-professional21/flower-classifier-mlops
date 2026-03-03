@@ -1,0 +1,35 @@
+# ============================================================
+# .dockerignore - Files to EXCLUDE from Docker image
+# ============================================================
+# Like .gitignore but for Docker
+# These files/folders will NOT be copied into the container
+# This makes your Docker image SMALLER and BUILD FASTER
+# ============================================================
+
+# Exclude the dataset folder (4000+ images = very large!)
+# The model is already trained and saved - we don't need raw images
+dataset/
+
+# Exclude MLflow tracking data (not needed in production)
+mlruns/
+mlflow.db
+
+# Exclude Python cache files (auto-generated, not needed)
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclude notebooks folder if you have one
+notebooks/
+
+# Exclude any virtual environment folder
+venv/
+env/
+.env
+
+# Exclude git folder
+.git/
+.gitignore
+
+# Exclude this file itself
+.dockerignore
