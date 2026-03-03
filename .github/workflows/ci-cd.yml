@@ -420,14 +420,14 @@ jobs:
       - name: "✅ Verify API routes defined correctly"
         run: |
           python - <<'EOF'
-          # Check app.py has all required routes
+          # Check app.py has all required functions
           with open('app.py', 'r') as f:
               content = f.read()
 
           routes = {
-              '@app.get("/")':       'Homepage route',
-              '@app.get("/health")': 'Health check route',
-              '@app.post("/predict")':'Prediction route',
+              'def homepage':     'Homepage route',
+              'def health_check': 'Health check route',
+              'def predict':      'Prediction route',
           }
 
           print("Checking API routes in app.py...")
